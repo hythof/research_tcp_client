@@ -78,9 +78,9 @@ static void clockf(clock_t c, char *buf) {
 
 int main() {
     const char *host = "localhost";
-    const char *port = "8880";
+    const char *port = "8080";
     int count = 1000;
-    int seconds = 60;
+    int seconds = 3;
     shutdown_at = clock() + seconds * CLOCKS_PER_SEC;
     latency_cap = count * seconds;
     latency_len = 0;
